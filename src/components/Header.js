@@ -28,7 +28,7 @@ function Header() {
         <div className="navbar-links">
           {/* <NavLink to="/auth">Currently working<br /> on REACT</NavLink> */}
           <NavLink to="/projects">My Todos</NavLink>
-          <NavLink to="/addProject">Add Todos</NavLink>
+          <NavLink to="/addProject">Add a Todos</NavLink>
           <button className='btn-logout' onClick={handleLogout}>Log Out</button>
         </div>
       </nav>):(  <nav>     <div className="navbar-logo">
