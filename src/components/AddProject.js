@@ -19,7 +19,7 @@ function AddProject() {
             }, 
              body: JSON.stringify({
                 title:title,
-                description:description,
+                description:description
               //  repo_url:repo_url
             })
         }).then((res)=>{
@@ -33,7 +33,7 @@ function AddProject() {
 
   return (
     <div className="addProject-form">
-        <h2>Add Project</h2>
+        <h2>Add a Todo</h2>
                 <form action="" method="post"  onSubmit={handleSubmit}>
         <div className="form-group">
             <label>Title</label>
@@ -48,7 +48,7 @@ function AddProject() {
             <label>Project Url (MUST BE URL)</label>
             <input type="name" name="repo_url" className="form-control"  placeholder="project Url(PROVIDE A URL)"  value={repo_url} onChange={(e)=>setRepo_url(e.target.value)} required/>
         </div> */}
-        <button type="submit" className="btn btn-primary">Add Project</button>
+        <button type="submit" className="btn btn-primary">Add Todo</button>
         {/* <div className="forgot-password">
         <span><p>Already have an account?</p></span> <p> <span onClick={()=>redirect('/auth')}>Login!</span></p>
     </div> */}

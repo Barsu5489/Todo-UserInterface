@@ -69,18 +69,18 @@ function Projects() {
           )}
           <p className="project__date">{timeString}</p>
         </div>
-        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHBvcnRmb2xpb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="missing" srcSet="" className='projectImg'/>
+        <img src="https://images.unsplash.com/photo-1641261689141-ee46b8a0470c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="missing" srcSet="" className='projectImg'/>
         {editingId === project.id ? (
           <textarea className="project__description" value={editingDescription} onChange={(e) => setEditingDescription(e.target.value)}></textarea>
         ) : (
           <p className="project__description">{project.description}</p>
         )}
         <div className="project__footer">
-          <ul className="project__skills">
+          {/* <ul className="project__skills">
             <li className="project__skill"><a href="#">{project.repo_url}</a></li>
             <li className="project__skill">work</li>
             <li className="project__skill">focus</li>
-          </ul>
+          </ul> */}
           <div className="project__buttons">
             {editingId === project.id ? (
               <button className="project__button project__button--
@@ -89,7 +89,7 @@ save" onClick={() => handleSave(project.id, editingTitle, editingDescription)}>S
               <button onClick={() =>
 handleEdit(project.id)} className="project__button project__button--edit">Edit</button>
             )}
-            <button onClick={() => handleDelete(project.id)} className="project__button project__button--delete">Delete</button>
+            <button onClick={() => handleDelete(project.id)} className="project__button project__button--delete" style={{backgroundColor:'red'}}>Delete</button>
           </div>
         </div>
       </div>
