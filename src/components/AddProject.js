@@ -6,7 +6,7 @@ function AddProject() {
     const redirect = useNavigate()
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
-    const [repo_url, setRepo_url] = useState('')
+   // const [repo_url, setRepo_url] = useState('')
     
 
     function handleSubmit(e){
@@ -44,10 +44,10 @@ function AddProject() {
             <textarea className="form-control" name='description' value={description} onChange={(e) => setDescription(e.target.value)} required ></textarea>
             
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
             <label>Project Url (MUST BE URL)</label>
             <input type="name" name="repo_url" className="form-control"  placeholder="project Url(PROVIDE A URL)"  value={repo_url} onChange={(e)=>setRepo_url(e.target.value)} required/>
-        </div>
+        </div> */}
         <button type="submit" className="btn btn-primary">Add Project</button>
         {/* <div className="forgot-password">
         <span><p>Already have an account?</p></span> <p> <span onClick={()=>redirect('/auth')}>Login!</span></p>
