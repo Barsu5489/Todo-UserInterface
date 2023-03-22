@@ -20,7 +20,7 @@ function AddProject() {
              body: JSON.stringify({
                 title:title,
                 description:description,
-                repo_url:repo_url
+              //  repo_url:repo_url
             })
         }).then((res)=>{
             if(res.ok){

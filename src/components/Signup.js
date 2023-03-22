@@ -41,7 +41,7 @@ function Signup() {
   return (
     <div>
         <div className="signup-form">    
-        <h1>Signup!</h1>
+        <h1 style={{textAlign:'center'}}>Signup! 🤗</h1>
         <form action="" method="post"  onSubmit={handleSubmit}>
         <div className="form-group">
             <label>Email</label>
